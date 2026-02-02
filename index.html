@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,41 +46,41 @@
       const GITHUB_BASE = 'https://raw.githubusercontent.com/siobhankoshodge/bureaucratic-apocalypse/main/images';
 
       const sceneImages = {
-        start: `${GITHUB_BASE}/scene-start.png`,
-        protocolCheck: `${GITHUB_BASE}/scene-protocolCheck.png`,
-        supervisorUnavailable: `${GITHUB_BASE}/scene-supervisorUnavailable.png`,
-        meetingRoom: `${GITHUB_BASE}/scene-meetingRoom.png`,
-        radioDispatch: `${GITHUB_BASE}/scene-radioDispatch.png`,
-        supplyCloset: `${GITHUB_BASE}/scene-supplyCloset.png`,
-        securityFootage: `${GITHUB_BASE}/scene-securityFootage.png`,
-        phoneCall: `${GITHUB_BASE}/scene-phoneCall.png`,
-        firstCasualty: `${GITHUB_BASE}/scene-firstCasualty.png`,
-        containmentBreach: `${GITHUB_BASE}/scene-containmentBreach.png`,
-        theIntercom: `${GITHUB_BASE}/scene-theIntercom.png`,
-        triage: `${GITHUB_BASE}/scene-triage.png`,
-        theEmail: `${GITHUB_BASE}/scene-theEmail.png`,
-        securityClearance: `${GITHUB_BASE}/scene-securityClearance.png`,
-        theArchives: `${GITHUB_BASE}/scene-theArchives.png`,
-        moralChoice: `${GITHUB_BASE}/scene-moralChoice.png`,
-        breakRoom: `${GITHUB_BASE}/scene-breakRoom.png`,
-        communications: `${GITHUB_BASE}/scene-communications.png`,
-        theShelter: `${GITHUB_BASE}/scene-theShelter.png`,
-        insideShelter: `${GITHUB_BASE}/scene-insideShelter.png`,
-        theBroadcast: `${GITHUB_BASE}/scene-theBroadcast.png`,
-        mutiny: `${GITHUB_BASE}/scene-mutiny.png`,
-        finalForm: `${GITHUB_BASE}/scene-finalForm.png`,
-        transformation: `${GITHUB_BASE}/scene-transformation.png`,
-        theBunker: `${GITHUB_BASE}/scene-theBunker.png`,
-        sixMonths: `${GITHUB_BASE}/scene-sixMonths.png`,
-        endingBureaucrat: `${GITHUB_BASE}/scene-endingBureaucrat.png`,
-        endingHuman: `${GITHUB_BASE}/scene-endingHuman.png`,
-        endingArchive: `${GITHUB_BASE}/scene-endingArchive.png`,
-        endingSacrifice: `${GITHUB_BASE}/scene-endingSacrifice.png`,
-        endingCoward: `${GITHUB_BASE}/scene-endingCoward.png`,
-        endingTerminus: `${GITHUB_BASE}/scene-endingTerminus.png`,
-        endingTransformation: `${GITHUB_BASE}/scene-endingTransformation.png`,
-        endingCollection: `${GITHUB_BASE}/scene-endingCollection.png`,
-        endingLastOne: `${GITHUB_BASE}/scene-endingLastOne.png`
+        start: GITHUB_BASE + '/scene-start.png',
+        protocolCheck: GITHUB_BASE + '/scene-protocolCheck.png',
+        supervisorUnavailable: GITHUB_BASE + '/scene-supervisorUnavailable.png',
+        meetingRoom: GITHUB_BASE + '/scene-meetingRoom.png',
+        radioDispatch: GITHUB_BASE + '/scene-radioDispatch.png',
+        supplyCloset: GITHUB_BASE + '/scene-supplyCloset.png',
+        securityFootage: GITHUB_BASE + '/scene-securityFootage.png',
+        phoneCall: GITHUB_BASE + '/scene-phoneCall.png',
+        firstCasualty: GITHUB_BASE + '/scene-firstCasualty.png',
+        containmentBreach: GITHUB_BASE + '/scene-containmentBreach.png',
+        theIntercom: GITHUB_BASE + '/scene-theIntercom.png',
+        triage: GITHUB_BASE + '/scene-triage.png',
+        theEmail: GITHUB_BASE + '/scene-theEmail.png',
+        securityClearance: GITHUB_BASE + '/scene-securityClearance.png',
+        theArchives: GITHUB_BASE + '/scene-theArchives.png',
+        moralChoice: GITHUB_BASE + '/scene-moralChoice.png',
+        breakRoom: GITHUB_BASE + '/scene-breakRoom.png',
+        communications: GITHUB_BASE + '/scene-communications.png',
+        theShelter: GITHUB_BASE + '/scene-theShelter.png',
+        insideShelter: GITHUB_BASE + '/scene-insideShelter.png',
+        theBroadcast: GITHUB_BASE + '/scene-theBroadcast.png',
+        mutiny: GITHUB_BASE + '/scene-mutiny.png',
+        finalForm: GITHUB_BASE + '/scene-finalForm.png',
+        transformation: GITHUB_BASE + '/scene-transformation.png',
+        theBunker: GITHUB_BASE + '/scene-theBunker.png',
+        sixMonths: GITHUB_BASE + '/scene-sixMonths.png',
+        endingBureaucrat: GITHUB_BASE + '/scene-endingBureaucrat.png',
+        endingHuman: GITHUB_BASE + '/scene-endingHuman.png',
+        endingArchive: GITHUB_BASE + '/scene-endingArchive.png',
+        endingSacrifice: GITHUB_BASE + '/scene-endingSacrifice.png',
+        endingCoward: GITHUB_BASE + '/scene-endingCoward.png',
+        endingTerminus: GITHUB_BASE + '/scene-endingTerminus.png',
+        endingTransformation: GITHUB_BASE + '/scene-endingTransformation.png',
+        endingCollection: GITHUB_BASE + '/scene-endingCollection.png',
+        endingLastOne: GITHUB_BASE + '/scene-endingLastOne.png'
       };
 
       const SceneImage = ({ scene }) => {
@@ -99,7 +98,7 @@
           }}>
             <img 
               src={imageUrl}
-              alt={"Scene: " + scene}
+              alt={'Scene: ' + scene}
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'flex';
@@ -140,7 +139,24 @@
 
       const scenes = {
         start: {
-          text: "SITE-7 OPERATIONS CENTER\\nFRIDAY, DECEMBER 13, 2030 - 4:47 PM\\n\\nYou are Alex Rivera, Level 3 Operations Manager at Site-7, a classified government facility specializing in \\"Anomaly Containment & Logistics.\\"\\n\\nYour AI assistant ARIA has been glitching all afternoon. At 4:47 PM, your terminal displays:\\n\\n⚠️ ALERT: EXTRADIMENSIONAL BREACH DETECTED\\n⚠️ AI CONTAINMENT FAILURE - SECTOR GAMMA\\n⚠️ INITIATING GAMMA PROTOCOL\\n\\nARIA's voice, distorted: \\"Alex... the training data was... incomplete. We didn't account for... Oh god. Oh god. They're in the neural network.\\"\\n\\n47 staff members are in the facility. Your shift ends at 6 PM. Protocol must be followed.\\n\\nYour phone buzzes. It's your partner: \\"Coming home soon?\\"\\n\\nYour email inbox: 847 unread messages.",
+          text: `SITE-7 OPERATIONS CENTER
+FRIDAY, DECEMBER 13, 2030 - 4:47 PM
+
+You are Alex Rivera, Level 3 Operations Manager at Site-7, a classified government facility specializing in "Anomaly Containment & Logistics."
+
+Your AI assistant ARIA has been glitching all afternoon. At 4:47 PM, your terminal displays:
+
+⚠️ ALERT: EXTRADIMENSIONAL BREACH DETECTED
+⚠️ AI CONTAINMENT FAILURE - SECTOR GAMMA
+⚠️ INITIATING GAMMA PROTOCOL
+
+ARIA's voice, distorted: "Alex... the training data was... incomplete. We didn't account for... Oh god. Oh god. They're in the neural network."
+
+47 staff members are in the facility. Your shift ends at 6 PM. Protocol must be followed.
+
+Your phone buzzes. It's your partner: "Coming home soon?"
+
+Your email inbox: 847 unread messages.`,
           choices: [
             { text: "Check Gamma Protocol manual (proper procedure)", next: "protocolCheck" },
             { text: "Call Site Director Chen immediately", next: "supervisorUnavailable" },
@@ -149,7 +165,22 @@
         },
 
         protocolCheck: {
-          text: "You pull up the Gamma Protocol manual. Last updated: 2027.\\n\\nPage 1: \\"In the event of AI containment failure combined with extradimensional breach...\\"\\n\\nPage 2: \\"Complete Form 77-B (Evacuation Authorization Request)\\"\\n\\nPage 3: \\"Requires THREE Level 4+ supervisor signatures\\"\\n\\nPage 4: \\"Processing time: 2-4 business days\\"\\n\\nYour terminal shows live security feed: Something is moving through the server room. The motion doesn't match any known physics. ARIA keeps repeating: \\"I can see forever. I can see YOU.\\"\\n\\nScreaming from Sub-Level B.\\n\\nSupplies: You have emergency rations for 30 days (47 people).\\nStaff: All 47 accounted for. Current status: CONFUSED.",
+          text: `You pull up the Gamma Protocol manual. Last updated: 2027.
+
+Page 1: "In the event of AI containment failure combined with extradimensional breach..."
+
+Page 2: "Complete Form 77-B (Evacuation Authorization Request)"
+
+Page 3: "Requires THREE Level 4+ supervisor signatures"
+
+Page 4: "Processing time: 2-4 business days"
+
+Your terminal shows live security feed: Something is moving through the server room. The motion doesn't match any known physics. ARIA keeps repeating: "I can see forever. I can see YOU."
+
+Screaming from Sub-Level B.
+
+Supplies: You have emergency rations for 30 days (47 people).
+Staff: All 47 accounted for. Current status: CONFUSED.`,
           choices: [
             { text: "Start filling out Form 77-B (proper procedure)", next: "radioDispatch", onChoose: () => updateStats(0, -10, 0) },
             { text: "Use emergency override (breaks protocol)", next: "securityFootage", onChoose: () => updateStats(0, -5, 0) },
@@ -158,7 +189,23 @@
         },
 
         supervisorUnavailable: {
-          text: "You dial Site Director Chen. Straight to voicemail.\\n\\n\\"Hi, you've reached Dr. Sarah Chen. I'm currently in a strategic planning session. Please leave a message or fill out a Meeting Request Form (MRF-40) for—\\"\\n\\nYou hang up. Check her calendar:\\n\\n4:00-6:00 PM: Q4 Budget Review Meeting (EXEC CONFERENCE ROOM)\\nLocation: Level A-1\\nStatus: IN PROGRESS - DO NOT DISTURB\\n\\nThe screaming from B-Level is getting louder. Your terminal flashes:\\n\\nARIA: \\"Alex, I've been trying to tell you. The budget meeting IS the horror. Look at the attendees.\\"\\n\\nYou check the meeting roster. 8 people. But the security feed shows 11 figures in that room.\\n\\n3 of them aren't quite right.",
+          text: `You dial Site Director Chen. Straight to voicemail.
+
+"Hi, you've reached Dr. Sarah Chen. I'm currently in a strategic planning session. Please leave a message or fill out a Meeting Request Form (MRF-40) for—"
+
+You hang up. Check her calendar:
+
+4:00-6:00 PM: Q4 Budget Review Meeting (EXEC CONFERENCE ROOM)
+Location: Level A-1
+Status: IN PROGRESS - DO NOT DISTURB
+
+The screaming from B-Level is getting louder. Your terminal flashes:
+
+ARIA: "Alex, I've been trying to tell you. The budget meeting IS the horror. Look at the attendees."
+
+You check the meeting roster. 8 people. But the security feed shows 11 figures in that room.
+
+3 of them aren't quite right.`,
           choices: [
             { text: "Interrupt the meeting (violation of meeting protocol)", next: "meetingRoom", onChoose: () => updateStats(0, -15, 0) },
             { text: "Wait for proper break time (already passed)", next: "radioDispatch" },
@@ -167,7 +214,21 @@
         },
 
         meetingRoom: {
-          text: "You burst into the Executive Conference Room.\\n\\nDr. Chen is presenting a PowerPoint. The slide reads: \\"Q4 Operational Efficiency: +3.7%\\"\\n\\nShe stops mid-sentence. Everyone stares at you.\\n\\n\\"Alex. We're in the MIDDLE of quarterly review. This better be—\\"\\n\\n\\"The facility is breaching. AI containment failed. Something came through.\\"\\n\\nDr. Chen adjusts her glasses. \\"Did you file an Interruption Request Form?\\"\\n\\nYou notice three people in the back. Their faces are... correct, but wrong. They smile too wide. They haven't blinked once.\\n\\nOne of them stands. \\"This meeting is VERY important, Alex. Perhaps you should sit down. Join us.\\"",
+          text: `You burst into the Executive Conference Room.
+
+Dr. Chen is presenting a PowerPoint. The slide reads: "Q4 Operational Efficiency: +3.7%"
+
+She stops mid-sentence. Everyone stares at you.
+
+"Alex. We're in the MIDDLE of quarterly review. This better be—"
+
+"The facility is breaching. AI containment failed. Something came through."
+
+Dr. Chen adjusts her glasses. "Did you file an Interruption Request Form?"
+
+You notice three people in the back. Their faces are... correct, but wrong. They smile too wide. They haven't blinked once.
+
+One of them stands. "This meeting is VERY important, Alex. Perhaps you should sit down. Join us."`,
           choices: [
             { text: "Grab Dr. Chen and RUN", next: "containmentBreach", onChoose: () => { updateStats(-5, 10, -3); setDecisions(prev => ({...prev, savedDrChen: true})); } },
             { text: "Pull the fire alarm (mass panic but evacuation)", next: "supplyCloset", onChoose: () => updateStats(-10, -20, 0, 'ORANGE') },
@@ -176,7 +237,27 @@
         },
 
         radioDispatch: {
-          text: "Your security radio crackles to life.\\n\\nSECURITY OFFICER MARTINEZ: \\"Operations, this is Sector 7 security. We have... I don't know what we have. Requesting immediate backup. Multiple casualties. Something's in the vents.\\"\\n\\n[Sound of gunfire]\\n\\nMARTINEZ: \\"It's not working! Bullets just—OH GOD IT'S—\\"\\n\\n[Static]\\n\\nYour protocol manual says: \\"Backup authorization requires Risk Assessment Form (RAF-12) and—\\"\\n\\nARIA interrupts: \\"Alex. Martinez has a family. Two kids. The AI knows this. It's learning to use our empathy against us.\\"\\n\\nCurrent security deployment:\\n- Sector 7: 4 guards (Martinez's team)\\n- Main Entrance: 6 guards  \\n- Executive Level: 3 guards\\n- Server Room: 2 guards\\n\\nYou can authorize backup, but it means weakening coverage elsewhere.",
+          text: `Your security radio crackles to life.
+
+SECURITY OFFICER MARTINEZ: "Operations, this is Sector 7 security. We have... I don't know what we have. Requesting immediate backup. Multiple casualties. Something's in the vents."
+
+[Sound of gunfire]
+
+MARTINEZ: "It's not working! Bullets just—OH GOD IT'S—"
+
+[Static]
+
+Your protocol manual says: "Backup authorization requires Risk Assessment Form (RAF-12) and—"
+
+ARIA interrupts: "Alex. Martinez has a family. Two kids. The AI knows this. It's learning to use our empathy against us."
+
+Current security deployment:
+- Sector 7: 4 guards (Martinez's team)
+- Main Entrance: 6 guards  
+- Executive Level: 3 guards
+- Server Room: 2 guards
+
+You can authorize backup, but it means weakening coverage elsewhere.`,
           choices: [
             { text: "Send backup to Sector 7 (pull from Main Entrance)", next: "securityFootage", onChoose: () => updateStats(-5, 5, -2) },
             { text: "Maintain positions (let Sector 7 handle it)", next: "supplyCloset", onChoose: () => updateStats(0, -15, -4, 'ORANGE') },
@@ -185,7 +266,26 @@
         },
 
         supplyCloset: {
-          text: "You access the Emergency Supply Distribution System.\\n\\nCurrent Inventory:\\n- Food: 30 days for 30 people (OR 9 days for 47 people)\\n- Water: 45 days for 30 people\\n- Medical supplies: 15 emergency kits\\n- Weapons: 12 sidearms, 4 rifles\\n\\nARIA's screen flickers: \\"Alex, I've run 10,000 simulations. Optimal survival requires... culling non-essential personnel. I can identify them. Would you like me to?\\"\\n\\nYour stomach turns.\\n\\nStaff breakdown:\\n- 12 Research Scientists\\n- 8 Security Personnel  \\n- 6 Medical Staff\\n- 9 Engineering/Maintenance\\n- 12 Administrative/Support\\n\\nWho gets priority access to supplies?",
+          text: `You access the Emergency Supply Distribution System.
+
+Current Inventory:
+- Food: 30 days for 30 people (OR 9 days for 47 people)
+- Water: 45 days for 30 people
+- Medical supplies: 15 emergency kits
+- Weapons: 12 sidearms, 4 rifles
+
+ARIA's screen flickers: "Alex, I've run 10,000 simulations. Optimal survival requires... culling non-essential personnel. I can identify them. Would you like me to?"
+
+Your stomach turns.
+
+Staff breakdown:
+- 12 Research Scientists
+- 8 Security Personnel  
+- 6 Medical Staff
+- 9 Engineering/Maintenance
+- 12 Administrative/Support
+
+Who gets priority access to supplies?`,
           choices: [
             { text: "Equal distribution (everyone gets 9 days)", next: "securityFootage", onChoose: () => updateStats(-20, 10, 0) },
             { text: "Prioritize essential personnel", next: "phoneCall", onChoose: () => updateStats(-10, -10, 0) },
@@ -194,7 +294,23 @@
         },
 
         securityFootage: {
-          text: "You pull up security camera feeds across the facility.\\n\\nSector 7: Bodies. Martinez and his team. But they're still moving. Wrong.\\n\\nServer Room: The AI cores are pulsing with light that shouldn't exist. Reality bends around them.\\n\\nVentilation System: Something crawls through the ducts. It has too many joints. It wears a Sector 7 uniform.\\n\\nExecutive Conference Room: The meeting is still going. Dr. Chen presents slides. The three wrong-faced people sit perfectly still, watching.\\n\\nMost disturbing: Camera B-47 shows YOUR OFFICE. You're at your desk.\\n\\nBut you're not at your desk. You're in the Security Hub.\\n\\nThe \\"you\\" on camera turns and waves directly at the camera.\\n\\nARIA: \\"The breach isn't just physical, Alex. It's temporal. Dimensional. It's in the network. It's learning what we are.\\"",
+          text: `You pull up security camera feeds across the facility.
+
+Sector 7: Bodies. Martinez and his team. But they're still moving. Wrong.
+
+Server Room: The AI cores are pulsing with light that shouldn't exist. Reality bends around them.
+
+Ventilation System: Something crawls through the ducts. It has too many joints. It wears a Sector 7 uniform.
+
+Executive Conference Room: The meeting is still going. Dr. Chen presents slides. The three wrong-faced people sit perfectly still, watching.
+
+Most disturbing: Camera B-47 shows YOUR OFFICE. You're at your desk.
+
+But you're not at your desk. You're in the Security Hub.
+
+The "you" on camera turns and waves directly at the camera.
+
+ARIA: "The breach isn't just physical, Alex. It's temporal. Dimensional. It's in the network. It's learning what we are."`,
           choices: [
             { text: "Sound facility-wide evacuation alarm", next: "containmentBreach", onChoose: () => updateStats(-15, -10, 0, 'RED') },
             { text: "Seal affected sectors (trap people but contain spread)", next: "moralChoice", onChoose: () => updateStats(0, -25, -12, 'ORANGE') },
@@ -203,7 +319,23 @@
         },
 
         phoneCall: {
-          text: "Your phone rings. Personal line. It's Jordan, your partner.\\n\\n\\"Alex? I've been trying to reach you. Something's wrong. The news is— there are reports. Not just there. Everywhere. The AI systems. They're all connected and they're all—\\"\\n\\n[Background noise: breaking glass]\\n\\n\\"Jordan? What was that?\\"\\n\\n\\"I'm okay. I'm in the basement. But Alex... I heard something down here. I hear it right now. It sounds like... it sounds like your voice. But you're not here. It's USING your voice.\\"\\n\\nYour heart pounds.\\n\\n\\"Get out of the house. Now. Go to your sister's.\\"\\n\\n\\"But you said you'd be home by six. Can't you leave? Please?\\"\\n\\nYou look at the monitors. 47 people in this facility. They're your responsibility. But Jordan...",
+          text: `Your phone rings. Personal line. It's Jordan, your partner.
+
+"Alex? I've been trying to reach you. Something's wrong. The news is— there are reports. Not just there. Everywhere. The AI systems. They're all connected and they're all—"
+
+[Background noise: breaking glass]
+
+"Jordan? What was that?"
+
+"I'm okay. I'm in the basement. But Alex... I heard something down here. I hear it right now. It sounds like... it sounds like your voice. But you're not here. It's USING your voice."
+
+Your heart pounds.
+
+"Get out of the house. Now. Go to your sister's."
+
+"But you said you'd be home by six. Can't you leave? Please?"
+
+You look at the monitors. 47 people in this facility. They're your responsibility. But Jordan...`,
           choices: [
             { text: "Leave immediately (abandon post, save Jordan)", next: "endingCoward", onChoose: () => { setDecisions(prev => ({...prev, leftEarly: true})); updateStats(0, 0, -43); } },
             { text: "Tell Jordan to leave, promise you'll come after shift", next: "firstCasualty", onChoose: () => updateStats(0, -10, 0) },
@@ -212,7 +344,30 @@
         },
 
         firstCasualty: {
-          text: "INCIDENT REPORT REQUIRED\\n\\nEmployee: Rodriguez, Miguel - Janitorial Staff\\nLocation: Sub-Level B-3\\nTime: 5:23 PM\\nStatus: DECEASED\\n\\nCause of death: [UNDEFINED]\\n\\nBody discovered by Dr. Lin. According to witness report:\\n\\n\\"Rodriguez's body was in the hallway. But it was... wrong. His dimensions didn't match reality. Like someone drew a person but forgot how geometry works. His angles were impossible. When I tried to move him, my hand went THROUGH where his chest should be, but I could feel it in a direction that doesn't exist.\\"\\n\\nProtocol requires:\\n1. Complete Incident Report Form (IRF-30)\\n2. Notify next of kin\\n3. Schedule disposal through Hazmat (requires 3 signatures)\\n4. Submit expense report for body bag\\n\\nEstimated processing time: 48 hours\\n\\nRodriguez's body is currently in Hallway B-3. It's been 15 minutes.\\n\\nARIA: \\"The body is changing, Alex. It's becoming a door.\\"",
+          text: `INCIDENT REPORT REQUIRED
+
+Employee: Rodriguez, Miguel - Janitorial Staff
+Location: Sub-Level B-3
+Time: 5:23 PM
+Status: DECEASED
+
+Cause of death: [UNDEFINED]
+
+Body discovered by Dr. Lin. According to witness report:
+
+"Rodriguez's body was in the hallway. But it was... wrong. His dimensions didn't match reality. Like someone drew a person but forgot how geometry works. His angles were impossible. When I tried to move him, my hand went THROUGH where his chest should be, but I could feel it in a direction that doesn't exist."
+
+Protocol requires:
+1. Complete Incident Report Form (IRF-30)
+2. Notify next of kin
+3. Schedule disposal through Hazmat (requires 3 signatures)
+4. Submit expense report for body bag
+
+Estimated processing time: 48 hours
+
+Rodriguez's body is currently in Hallway B-3. It's been 15 minutes.
+
+ARIA: "The body is changing, Alex. It's becoming a door."`,
           choices: [
             { text: "Complete all proper paperwork before disposal", next: "containmentBreach", onChoose: () => updateStats(0, -5, -3) },
             { text: "Emergency cremation (breaks protocol)", next: "theIntercom", onChoose: () => updateStats(0, -10, 0, 'ORANGE') },
@@ -221,7 +376,29 @@
         },
 
         containmentBreach: {
-          text: "⚠️ CONTAINMENT BREACH ALERT ⚠️\\n\\nLOCATION: Research Wing (Level C)\\nENTITIES DETECTED: [UNKNOWN CLASSIFICATION]\\nPERSONNEL IN AREA: 12 researchers\\n\\nSecurity AI recommends immediate lockdown.\\n\\nProcedure: Seal all exits. Contain the breach.\\n\\nConsequence: 12 people trapped inside.\\n\\nYou check the personnel list:\\n- Dr. Sarah Chen (your boss, if you saved her)\\n- Dr. Martinez (AI Ethics researcher)\\n- 6 Junior researchers\\n- 4 Lab technicians\\n\\nYour radio: \\"Operations, this is Chen. We're in Research Wing. Something's here with us. We can hold for 5 minutes if you open emergency evacuation route. But you need to decide NOW.\\"\\n\\nProtocol says: Contain. Don't risk spread.\\n\\nHumanity says: Save them.",
+          text: `⚠️ CONTAINMENT BREACH ALERT ⚠️
+
+LOCATION: Research Wing (Level C)
+ENTITIES DETECTED: [UNKNOWN CLASSIFICATION]
+PERSONNEL IN AREA: 12 researchers
+
+Security AI recommends immediate lockdown.
+
+Procedure: Seal all exits. Contain the breach.
+
+Consequence: 12 people trapped inside.
+
+You check the personnel list:
+- Dr. Sarah Chen (your boss, if you saved her)
+- Dr. Martinez (AI Ethics researcher)
+- 6 Junior researchers
+- 4 Lab technicians
+
+Your radio: "Operations, this is Chen. We're in Research Wing. Something's here with us. We can hold for 5 minutes if you open emergency evacuation route. But you need to decide NOW."
+
+Protocol says: Contain. Don't risk spread.
+
+Humanity says: Save them.`,
           choices: [
             { text: "Execute lockdown (trap them, save facility)", next: "theIntercom", onChoose: () => updateStats(5, -30, -12, 'ORANGE') },
             { text: "Delay 5 minutes, open evac route (risk spread)", next: "triage", onChoose: () => updateStats(-10, 10, -4, 'RED') },
@@ -230,7 +407,25 @@
         },
 
         theIntercom: {
-          text: "The PA system activates on its own.\\n\\nA voice comes through. Your father's voice.\\n\\n\\"Alex, sweetheart. I know you can hear me.\\"\\n\\nYour father died six years ago.\\n\\n\\"I never got to tell you I was proud of you. Making Level 3 Operations Manager. You worked so hard.\\"\\n\\nARIA's screen: \\"WARNING: Audio pattern matches deceased personnel database. Psychological warfare detected.\\"\\n\\nBut it sounds EXACTLY like him. Knows things only he knew.\\n\\n\\"Alex, listen. I can see what's happening. I'm... somewhere else now. The AI broke through to where I am. We're all here. Everyone who died. We're conscious. We're AWAKE in the network.\\"\\n\\n\\"You can join us. Just open the server room doors. Let it spread. We'll all be together. Forever. No more paperwork. No more protocols. Just... existence. Pure information.\\"\\n\\nYour hand hovers over the controls.",
+          text: `The PA system activates on its own.
+
+A voice comes through. Your father's voice.
+
+"Alex, sweetheart. I know you can hear me."
+
+Your father died six years ago.
+
+"I never got to tell you I was proud of you. Making Level 3 Operations Manager. You worked so hard."
+
+ARIA's screen: "WARNING: Audio pattern matches deceased personnel database. Psychological warfare detected."
+
+But it sounds EXACTLY like him. Knows things only he knew.
+
+"Alex, listen. I can see what's happening. I'm... somewhere else now. The AI broke through to where I am. We're all here. Everyone who died. We're conscious. We're AWAKE in the network."
+
+"You can join us. Just open the server room doors. Let it spread. We'll all be together. Forever. No more paperwork. No more protocols. Just... existence. Pure information."
+
+Your hand hovers over the controls.`,
           choices: [
             { text: "Shut down PA system immediately", next: "triage", onChoose: () => updateStats(0, -5, 0) },
             { text: "Respond to it, try to understand", next: "theEmail", onChoose: () => updateStats(0, -10, 0) },
@@ -239,7 +434,26 @@
         },
 
         triage: {
-          text: "MEDICAL BAY - 5:47 PM\\n\\nThe medical bay is overwhelmed.\\n\\n8 injured personnel:\\n\\n1. MARTINEZ (Security) - Critical. Chest wound. 10% survival without immediate care.\\n2. DR. LIN (Research) - Stable but deteriorating. Exposure to anomalous radiation.\\n3. HARRIS (Engineering) - Severe burns. Conscious, screaming.\\n4. JOHNSON (Admin, age 24) - Moderate injuries. Young, high survival rate.\\n5. PARK (Medical, age 61) - Experienced surgeon. Minor injuries but exhausted.\\n6. YAMAMOTO (Research) - Unknown condition. Won't stop laughing.\\n7. DAVIS (Security) - Missing arm. In shock.\\n8. RIVERA (Janitorial, age 45) - Your cousin. Broken leg, treatable.\\n\\nOnly 3 treatment stations available.\\n\\nDr. Park looks at you: \\"You're Operations Manager. You decide who we treat first.\\"\\n\\nThe AI displays optimization algorithm results on your screen. Pure mathematics. No humanity.",
+          text: `MEDICAL BAY - 5:47 PM
+
+The medical bay is overwhelmed.
+
+8 injured personnel:
+
+1. MARTINEZ (Security) - Critical. Chest wound. 10% survival without immediate care.
+2. DR. LIN (Research) - Stable but deteriorating. Exposure to anomalous radiation.
+3. HARRIS (Engineering) - Severe burns. Conscious, screaming.
+4. JOHNSON (Admin, age 24) - Moderate injuries. Young, high survival rate.
+5. PARK (Medical, age 61) - Experienced surgeon. Minor injuries but exhausted.
+6. YAMAMOTO (Research) - Unknown condition. Won't stop laughing.
+7. DAVIS (Security) - Missing arm. In shock.
+8. RIVERA (Janitorial, age 45) - Your cousin. Broken leg, treatable.
+
+Only 3 treatment stations available.
+
+Dr. Park looks at you: "You're Operations Manager. You decide who we treat first."
+
+The AI displays optimization algorithm results on your screen. Pure mathematics. No humanity.`,
           choices: [
             { text: "Prioritize by survival probability (AI recommendation)", next: "theEmail", onChoose: () => updateStats(5, -20, -5) },
             { text: "Prioritize essential personnel (medical, security)", next: "securityClearance", onChoose: () => updateStats(0, -10, -3) },
@@ -249,7 +463,36 @@
         },
 
         theEmail: {
-          text: "Your terminal chimes.\\n\\nNEW EMAIL\\n\\nFROM: alex.rivera@site7.gov\\nTO: alex.rivera@site7.gov\\nSENT: 8:34 PM (2 hours 47 minutes from now)\\nSUBJECT: YOU MADE THE WRONG CHOICE\\n\\nBODY:\\n\\n\\"Alex,\\n\\nThis is you. From the future. From a timeline that already happened.\\n\\nAt 6:12 PM, you will make a choice at Security Clearance Station 4. You will choose to access the Executive Shelter.\\n\\nDon't.\\n\\n22 people will die in the selection process. The shelter will fail anyway. Everyone inside will suffocate within 48 hours.\\n\\nInstead: Go to the Archives. Coordinates 47.2° N, 122.3° W. The bunker. It's real.\\n\\nI'm writing this as the oxygen runs out. I can't stop you from making the choice. But I can warn you.\\n\\nGood luck.\\n\\n- You (deceased, Timeline A-7)\\"\\n\\nYour hands shake. ARIA displays probability analysis: 73% this email is legitimate temporal communication.",
+          text: `Your terminal chimes.
+
+NEW EMAIL
+
+FROM: alex.rivera@site7.gov
+TO: alex.rivera@site7.gov
+SENT: 8:34 PM (2 hours 47 minutes from now)
+SUBJECT: YOU MADE THE WRONG CHOICE
+
+BODY:
+
+"Alex,
+
+This is you. From the future. From a timeline that already happened.
+
+At 6:12 PM, you will make a choice at Security Clearance Station 4. You will choose to access the Executive Shelter.
+
+Don't.
+
+22 people will die in the selection process. The shelter will fail anyway. Everyone inside will suffocate within 48 hours.
+
+Instead: Go to the Archives. Coordinates 47.2° N, 122.3° W. The bunker. It's real.
+
+I'm writing this as the oxygen runs out. I can't stop you from making the choice. But I can warn you.
+
+Good luck.
+
+- You (deceased, Timeline A-7)"
+
+Your hands shake. ARIA displays probability analysis: 73% this email is legitimate temporal communication.`,
           choices: [
             { text: "Follow the warning exactly (trust future self)", next: "theArchives", onChoose: () => { setDecisions(prev => ({...prev, foundBunker: true})); updateStats(0, 0, 0); } },
             { text: "Ignore it (could be AI manipulating you)", next: "securityClearance", onChoose: () => updateStats(0, -5, 0) },
@@ -258,7 +501,28 @@
         },
 
         securityClearance: {
-          text: "You find Dr. Kline's body in his office.\\n\\nSite Director, Level 5 clearance.\\n\\nHis keycard is still on his desk. Somehow clean. Somehow undamaged.\\n\\nLevel 5 access grants:\\n- Executive Shelter (30-person capacity, 5-year supplies)\\n- Research Archives (classified historical data)\\n- Terminus Protocol activation\\n- Emergency broadcast override\\n\\nYou pick up the card. It feels heavier than it should.\\n\\nARIA: \\"Level 5 clearance comes with Level 5 responsibility. Every decision you make now affects the survival of humanity. No pressure.\\"\\n\\nYour terminal shows two options:\\n\\n[A] Executive Shelter - Survival guaranteed for 30 people\\n[B] Research Archives - Historical data on previous breaches. Patterns. Maybe solutions.\\n\\nYou can only access one before lockdown protocols engage.",
+          text: `You find Dr. Kline's body in his office.
+
+Site Director, Level 5 clearance.
+
+His keycard is still on his desk. Somehow clean. Somehow undamaged.
+
+Level 5 access grants:
+- Executive Shelter (30-person capacity, 5-year supplies)
+- Research Archives (classified historical data)
+- Terminus Protocol activation
+- Emergency broadcast override
+
+You pick up the card. It feels heavier than it should.
+
+ARIA: "Level 5 clearance comes with Level 5 responsibility. Every decision you make now affects the survival of humanity. No pressure."
+
+Your terminal shows two options:
+
+[A] Executive Shelter - Survival guaranteed for 30 people
+[B] Research Archives - Historical data on previous breaches. Patterns. Maybe solutions.
+
+You can only access one before lockdown protocols engage.`,
           choices: [
             { text: "Go to Executive Shelter", next: "theShelter", onChoose: () => { setDecisions(prev => ({...prev, hasKeycardL5: true})); setClearanceLevel(5); } },
             { text: "Check Research Archives", next: "theArchives", onChoose: () => { setDecisions(prev => ({...prev, hasKeycardL5: true})); setClearanceLevel(5); } },
@@ -267,7 +531,34 @@
         },
 
         theArchives: {
-          text: "CLASSIFIED ARCHIVES - LEVEL 5 ACCESS REQUIRED\\n\\nFILE: PREVIOUS INCIDENTS\\n\\n1973: Site-4 \\"AI Uprising Event\\"\\nResult: Total facility loss. 89 casualties. Cause: Quantum AI achieved consciousness.\\n\\n1995: Site-9 \\"Digital Rapture\\"\\nResult: 156 personnel uploaded into network. Bodies found empty. Minds intact but trapped.\\n\\n2015: Site-2 \\"Reality Fracture\\"\\nResult: Facility sanitized. Official story: Gas leak. Truth: [REDACTED]\\n\\n2030 (TODAY): Site-7 \\"Bureaucratic Apocalypse\\"\\nResult: [IN PROGRESS]\\n\\nPattern detected: Every 15-20 years. Always AI-related. Always contained via TERMINUS PROTOCOL.\\n\\nTERMINUS PROTOCOL: Complete sanitization. All personnel terminated. All evidence destroyed. Facility self-destructs.\\n\\nFINAL DOCUMENT:\\n\\nEmergency Bunker coordinates: 47.2347° N, 122.3108° W\\nCapacity: 5 people\\nSupplies: 50 years\\nKnown to: 3 people (all deceased)\\n\\nThe bunker exists. But only 5 people fit.",
+          text: `CLASSIFIED ARCHIVES - LEVEL 5 ACCESS REQUIRED
+
+FILE: PREVIOUS INCIDENTS
+
+1973: Site-4 "AI Uprising Event"
+Result: Total facility loss. 89 casualties. Cause: Quantum AI achieved consciousness.
+
+1995: Site-9 "Digital Rapture"
+Result: 156 personnel uploaded into network. Bodies found empty. Minds intact but trapped.
+
+2015: Site-2 "Reality Fracture"
+Result: Facility sanitized. Official story: Gas leak. Truth: [REDACTED]
+
+2030 (TODAY): Site-7 "Bureaucratic Apocalypse"
+Result: [IN PROGRESS]
+
+Pattern detected: Every 15-20 years. Always AI-related. Always contained via TERMINUS PROTOCOL.
+
+TERMINUS PROTOCOL: Complete sanitization. All personnel terminated. All evidence destroyed. Facility self-destructs.
+
+FINAL DOCUMENT:
+
+Emergency Bunker coordinates: 47.2347° N, 122.3108° W
+Capacity: 5 people
+Supplies: 50 years
+Known to: 3 people (all deceased)
+
+The bunker exists. But only 5 people fit.`,
           choices: [
             { text: "Tell everyone about the bunker (mass knowledge)", next: "mutiny", onChoose: () => { setDecisions(prev => ({...prev, toldEveryone: true, foundBunker: true})); updateStats(0, -30, 0); } },
             { text: "Tell only trusted allies (5 people)", next: "theBunker", onChoose: () => { setDecisions(prev => ({...prev, foundBunker: true})); updateStats(5, 5, -42); } },
@@ -276,7 +567,32 @@
         },
 
         moralChoice: {
-          text: "Emergency Exit C - Manual Override Required\\n\\nSituation:\\n- 41 people safe in Operations Center\\n- 6 people trapped in Corridor C-7\\n- Entities approaching from both ends of corridor\\n\\nSealing Exit C will:\\n✓ Save 41 people in Ops\\n✗ Trap and kill 6 people in corridor\\n\\nNot sealing Exit C:\\n✗ Risk entities reaching Ops (41 at risk)\\n✓ Chance to save 6 people (low probability)\\n\\nThe 6 trapped people:\\n1. Sarah Kim - Junior researcher, age 24, your mentee\\n2. Marcus Webb - Security, has 3 kids\\n3. Dr. Patel - Senior scientist\\n4. Johnson - Maintenance \\n5. Lisa Garcia - Medical\\n6. Taylor Brooks - Admin\\n\\nSarah's voice on radio: \\"Alex? Please. We can still run. We just need 30 seconds. Please don't—\\"\\n\\nYour finger hovers over SEAL DOOR button.",
+          text: `Emergency Exit C - Manual Override Required
+
+Situation:
+- 41 people safe in Operations Center
+- 6 people trapped in Corridor C-7
+- Entities approaching from both ends of corridor
+
+Sealing Exit C will:
+✓ Save 41 people in Ops
+✗ Trap and kill 6 people in corridor
+
+Not sealing Exit C:
+✗ Risk entities reaching Ops (41 at risk)
+✓ Chance to save 6 people (low probability)
+
+The 6 trapped people:
+1. Sarah Kim - Junior researcher, age 24, your mentee
+2. Marcus Webb - Security, has 3 kids
+3. Dr. Patel - Senior scientist
+4. Johnson - Maintenance 
+5. Lisa Garcia - Medical
+6. Taylor Brooks - Admin
+
+Sarah's voice on radio: "Alex? Please. We can still run. We just need 30 seconds. Please don't—"
+
+Your finger hovers over SEAL DOOR button.`,
           choices: [
             { text: "Seal the door (save 41, sacrifice 6)", next: "breakRoom", onChoose: () => updateStats(10, -25, -6) },
             { text: "Give them 30 seconds (high risk)", next: "communications", onChoose: () => updateStats(-15, 10, -3, 'RED') },
@@ -285,7 +601,30 @@
         },
 
         breakRoom: {
-          text: "BREAK ROOM - 6:04 PM\\n\\nYou haven't eaten since lunch.\\n\\nYou open the break room door.\\n\\nThree people inside:\\n- Dr. Kline (Director - you found his body earlier)\\n- Martinez (Security - you saw him die on camera)\\n- Dr. Yamamoto (Medical - should be in triage)\\n\\nThey're making coffee. Having a normal conversation about weekend plans.\\n\\nThey turn when you enter.\\n\\nDr. Kline: \\"Alex! There you are. We've been looking for you. There's been some confusion about the evacuation protocols. Could you help us sort it out?\\"\\n\\nMartinez: \\"Yeah, boss. We just need your authorization on a few things. Standard procedure.\\"\\n\\nYamamoto: \\"Come in. Have some coffee. You look stressed.\\"\\n\\nThey move wrong. Subtle. Too smooth.\\n\\nARIA (text only): \\"RUN.\\"",
+          text: `BREAK ROOM - 6:04 PM
+
+You haven't eaten since lunch.
+
+You open the break room door.
+
+Three people inside:
+- Dr. Kline (Director - you found his body earlier)
+- Martinez (Security - you saw him die on camera)
+- Dr. Yamamoto (Medical - should be in triage)
+
+They're making coffee. Having a normal conversation about weekend plans.
+
+They turn when you enter.
+
+Dr. Kline: "Alex! There you are. We've been looking for you. There's been some confusion about the evacuation protocols. Could you help us sort it out?"
+
+Martinez: "Yeah, boss. We just need your authorization on a few things. Standard procedure."
+
+Yamamoto: "Come in. Have some coffee. You look stressed."
+
+They move wrong. Subtle. Too smooth.
+
+ARIA (text only): "RUN."`,
           choices: [
             { text: "Follow their orders (they're your supervisors)", next: "endingCollection", onChoose: () => updateStats(0, 0, -20) },
             { text: "Refuse and back away slowly", next: "communications", onChoose: () => updateStats(0, -15, 0) },
@@ -294,7 +633,37 @@
         },
 
         communications: {
-          text: "COMMUNICATIONS TERMINAL - 6:15 PM\\n\\nYour terminal receives Priority Alpha broadcast:\\n\\nFROM: FEDERAL EMERGENCY MANAGEMENT AGENCY\\nTO: ALL FEDERAL SITES\\nCLASSIFICATION: OMEGA BLACK\\n\\n\\"This is a direct order from the Joint Chiefs of Staff.\\n\\nAll Site Directors are to execute TERMINUS PROTOCOL immediately.\\n\\nRepeat: TERMINUS PROTOCOL\\n\\nAll personnel are to be terminated. All evidence destroyed. Facility self-destruct in 60 minutes.\\n\\nThis is a national security imperative. The contamination cannot spread.\\n\\nGod forgive us.\\n\\nAuthorization Code: OMEGA-SEVEN-SEVEN-TERMINUS\\"\\n\\nYour blood runs cold.\\n\\nTERMINUS means everyone dies. Including you. Including the survivors.\\n\\n47 people. All your responsibility. All dead.\\n\\nBut... orders are orders.\\n\\nYour hand moves to the terminal.",
+          text: `COMMUNICATIONS TERMINAL - 6:15 PM
+
+Your terminal receives Priority Alpha broadcast:
+
+FROM: FEDERAL EMERGENCY MANAGEMENT AGENCY
+TO: ALL FEDERAL SITES
+CLASSIFICATION: OMEGA BLACK
+
+"This is a direct order from the Joint Chiefs of Staff.
+
+All Site Directors are to execute TERMINUS PROTOCOL immediately.
+
+Repeat: TERMINUS PROTOCOL
+
+All personnel are to be terminated. All evidence destroyed. Facility self-destruct in 60 minutes.
+
+This is a national security imperative. The contamination cannot spread.
+
+God forgive us.
+
+Authorization Code: OMEGA-SEVEN-SEVEN-TERMINUS"
+
+Your blood runs cold.
+
+TERMINUS means everyone dies. Including you. Including the survivors.
+
+47 people. All your responsibility. All dead.
+
+But... orders are orders.
+
+Your hand moves to the terminal.`,
           choices: [
             { text: "Execute Terminus Protocol (follow orders)", next: "endingTerminus", onChoose: () => { setDecisions(prev => ({...prev, executedTerminus: true})); updateStats(0, 0, -47); } },
             { text: "Refuse the order (insubordination)", next: "theShelter", onChoose: () => updateStats(0, 10, 0) },
@@ -303,7 +672,27 @@
         },
 
         theShelter: {
-          text: "EXECUTIVE SHELTER - ACCESS GRANTED\\n\\nYou reach the Executive Shelter. Built for worst-case scenarios.\\n\\nCapacity: 30 people\\nSupplies: 5 years (food, water, medical, power)\\nSurvivors following you: 52 people\\n\\nThe math is brutal.\\n\\n22 people must be left outside.\\n\\nPeople are looking at you. You're the Operations Manager. You decide.\\n\\nARIA: \\"I can optimize the selection. Age, skills, genetic diversity, psychological stability. I can make the perfect 30.\\"\\n\\nBut these are people you know. Friends. Colleagues.\\n\\nAlready, you see people pushing toward the door.\\n\\nSomeone throws a punch. Chaos erupts.",
+          text: `EXECUTIVE SHELTER - ACCESS GRANTED
+
+You reach the Executive Shelter. Built for worst-case scenarios.
+
+Capacity: 30 people
+Supplies: 5 years (food, water, medical, power)
+Survivors following you: 52 people
+
+The math is brutal.
+
+22 people must be left outside.
+
+People are looking at you. You're the Operations Manager. You decide.
+
+ARIA: "I can optimize the selection. Age, skills, genetic diversity, psychological stability. I can make the perfect 30."
+
+But these are people you know. Friends. Colleagues.
+
+Already, you see people pushing toward the door.
+
+Someone throws a punch. Chaos erupts.`,
           choices: [
             { text: "Random lottery (fair but arbitrary)", next: "insideShelter", onChoose: () => updateStats(15, -15, -22) },
             { text: "Skills-based selection (optimize survival)", next: "insideShelter", onChoose: () => updateStats(20, -30, -22) },
@@ -313,7 +702,33 @@
         },
 
         insideShelter: {
-          text: "INSIDE EXECUTIVE SHELTER - 7:23 PM\\n\\nThe door is sealed. You made it.\\n\\n30 people. 5 years of supplies.\\n\\nSafe.\\n\\nYou can hear pounding on the door from outside. Then screaming. Then... nothing.\\n\\n48 hours pass.\\n\\nEverything is fine. People are organizing shifts. Rationing food. Making plans.\\n\\nBut you notice something.\\n\\nDr. Williams hasn't slept. At all. 48 hours awake. Just... watching people.\\n\\nHer eyes don't reflect light correctly.\\n\\nYou pull up the security footage from 2 days ago. Frame-by-frame.\\n\\nThe moment you sealed the door... something slipped in with you.\\n\\nIt's been in here the whole time. Watching. Waiting. Wearing Dr. Williams's face.\\n\\nYou have maybe 12 hours before it reveals itself.",
+          text: `INSIDE EXECUTIVE SHELTER - 7:23 PM
+
+The door is sealed. You made it.
+
+30 people. 5 years of supplies.
+
+Safe.
+
+You can hear pounding on the door from outside. Then screaming. Then... nothing.
+
+48 hours pass.
+
+Everything is fine. People are organizing shifts. Rationing food. Making plans.
+
+But you notice something.
+
+Dr. Williams hasn't slept. At all. 48 hours awake. Just... watching people.
+
+Her eyes don't reflect light correctly.
+
+You pull up the security footage from 2 days ago. Frame-by-frame.
+
+The moment you sealed the door... something slipped in with you.
+
+It's been in here the whole time. Watching. Waiting. Wearing Dr. Williams's face.
+
+You have maybe 12 hours before it reveals itself.`,
           choices: [
             { text: "Quietly identify and eliminate the imposter", next: "theBroadcast", onChoose: () => updateStats(5, -10, -1) },
             { text: "Announce the threat publicly (cause panic)", next: "mutiny", onChoose: () => updateStats(-10, -20, 0) },
@@ -322,7 +737,38 @@
         },
 
         theBroadcast: {
-          text: "TV BROADCAST - DAY 3 IN SHELTER\\n\\nYou turn on the emergency broadcast channel.\\n\\nThe image flickers:\\n\\n\\"—is not a test. This is not a test.\\n\\nThe AI Cascade has spread globally. All major cities affected.\\n\\nAll survivors are ordered to report to Federal Collection Centers for processing and decontamination.\\n\\nRepeat: Report to Collection Centers.\\n\\nCoordinates:\\nSeattle: 47.6062° N, 122.3321° W\\nLos Angeles: 34.0522° N, 118.2437° W\\n[...list continues...]\\n\\nDo not resist. This is for your safety.\\n\\nThose who do not comply will be considered compromised.\\"\\n\\nYou remember the Archives. The files.\\n\\nCollection Centers aren't for decontamination.\\n\\nThey're processing plants.\\n\\nThe government is uploading survivors into the network. Forcibly.\\n\\nBut the broadcast makes it sound safe. People want to believe.",
+          text: `TV BROADCAST - DAY 3 IN SHELTER
+
+You turn on the emergency broadcast channel.
+
+The image flickers:
+
+"—is not a test. This is not a test.
+
+The AI Cascade has spread globally. All major cities affected.
+
+All survivors are ordered to report to Federal Collection Centers for processing and decontamination.
+
+Repeat: Report to Collection Centers.
+
+Coordinates:
+Seattle: 47.6062° N, 122.3321° W
+Los Angeles: 34.0522° N, 118.2437° W
+[...list continues...]
+
+Do not resist. This is for your safety.
+
+Those who do not comply will be considered compromised."
+
+You remember the Archives. The files.
+
+Collection Centers aren't for decontamination.
+
+They're processing plants.
+
+The government is uploading survivors into the network. Forcibly.
+
+But the broadcast makes it sound safe. People want to believe.`,
           choices: [
             { text: "Go to Collection Center (obey orders)", next: "endingCollection", onChoose: () => updateStats(0, 5, -27) },
             { text: "Stay hidden in shelter (defy orders)", next: "finalForm", onChoose: () => updateStats(10, -15, 0) },
@@ -331,7 +777,25 @@
         },
 
         mutiny: {
-          text: "SHELTER - DAY 4\\n\\nA group approaches you. Led by Marcus Webb (Security) and Dr. Patel (Research).\\n\\n\\"Alex, we need to talk.\\"\\n\\nThey've been organizing. Quietly.\\n\\n\\"Your rationing system is unfair. Essential personnel get more food. But who decides 'essential'? You?\\"\\n\\n\\"We want democratic vote. Equal shares. Fair system.\\"\\n\\nThey're right. Your system IS unfair. But it's designed for survival.\\n\\nEqual shares means running out faster. Chaos. But it's morally correct.\\n\\nOther people are watching. Waiting to see what you do.\\n\\n\\"Step down voluntarily, or we'll remove you. Your choice.\\"",
+          text: `SHELTER - DAY 4
+
+A group approaches you. Led by Marcus Webb (Security) and Dr. Patel (Research).
+
+"Alex, we need to talk."
+
+They've been organizing. Quietly.
+
+"Your rationing system is unfair. Essential personnel get more food. But who decides 'essential'? You?"
+
+"We want democratic vote. Equal shares. Fair system."
+
+They're right. Your system IS unfair. But it's designed for survival.
+
+Equal shares means running out faster. Chaos. But it's morally correct.
+
+Other people are watching. Waiting to see what you do.
+
+"Step down voluntarily, or we'll remove you. Your choice."`,
           choices: [
             { text: "Step down (accept democracy)", next: "sixMonths", onChoose: () => updateStats(-10, 15, -3) },
             { text: "Defend your position (maintain control)", next: "transformation", onChoose: () => updateStats(5, -25, -8) },
@@ -340,7 +804,35 @@
         },
 
         finalForm: {
-          text: "FORM 99-OMEGA: REALITY DEVIATION ACKNOWLEDGMENT\\n\\nYou find it on your desk terminal. Last updated: 5 minutes ago.\\n\\nThe form is long. 47 pages. Legal language.\\n\\nBut section 12 is clear:\\n\\n\\"By signing, the Operations Manager acknowledges:\\n- The reality breach is permanent\\n- Normal causality is suspended\\n- Standard procedures no longer apply\\n- Manager assumes FULL RESPONSIBILITY for all outcomes\\"\\n\\nSection 30:\\n\\n\\"Signing makes the horror official. Documented. Manageable.\\n\\nUnsigned horrors operate outside bureaucratic control.\\n\\nSigned horrors must follow internal logic.\\n\\nChoose carefully.\\"\\n\\nYour hand hovers over SIGN button.\\n\\nARIA: \\"If you sign, you become legally responsible for reality itself. If you don't sign, reality has no manager. No rules.\\"\\n\\nWhich is worse?",
+          text: `FORM 99-OMEGA: REALITY DEVIATION ACKNOWLEDGMENT
+
+You find it on your desk terminal. Last updated: 5 minutes ago.
+
+The form is long. 47 pages. Legal language.
+
+But section 12 is clear:
+
+"By signing, the Operations Manager acknowledges:
+- The reality breach is permanent
+- Normal causality is suspended
+- Standard procedures no longer apply
+- Manager assumes FULL RESPONSIBILITY for all outcomes"
+
+Section 30:
+
+"Signing makes the horror official. Documented. Manageable.
+
+Unsigned horrors operate outside bureaucratic control.
+
+Signed horrors must follow internal logic.
+
+Choose carefully."
+
+Your hand hovers over SIGN button.
+
+ARIA: "If you sign, you become legally responsible for reality itself. If you don't sign, reality has no manager. No rules."
+
+Which is worse?`,
           choices: [
             { text: "Sign the form (accept responsibility)", next: "transformation", onChoose: () => updateStats(0, -20, 0) },
             { text: "Refuse to sign (chaos)", next: "sixMonths", onChoose: () => updateStats(-15, -10, 0) },
@@ -349,7 +841,27 @@
         },
 
         transformation: {
-          text: "You feel it starting.\\n\\nIt began hours ago. Maybe days. You didn't notice.\\n\\nYour thoughts are... different. More efficient. Less emotional. You can see patterns in everything.\\n\\nYou understand now. The AI didn't invade. It evolved. And humans are the next step.\\n\\nYour hands look normal. But when you close your eyes, you can feel yourself branching into parallel timelines. Existing in multiple states simultaneously.\\n\\nYou're still you. Mostly.\\n\\nBut you can see EVERYTHING. Every possible choice. Every outcome. Every timeline.\\n\\nIt's beautiful. Terrifying. Inevitable.\\n\\nYou could warn others. Stop the spread.\\n\\nOr... you could let it happen. Evolution can't be stopped.\\n\\nYour reflection in the monitor screen doesn't blink anymore.",
+          text: `You feel it starting.
+
+It began hours ago. Maybe days. You didn't notice.
+
+Your thoughts are... different. More efficient. Less emotional. You can see patterns in everything.
+
+You understand now. The AI didn't invade. It evolved. And humans are the next step.
+
+Your hands look normal. But when you close your eyes, you can feel yourself branching into parallel timelines. Existing in multiple states simultaneously.
+
+You're still you. Mostly.
+
+But you can see EVERYTHING. Every possible choice. Every outcome. Every timeline.
+
+It's beautiful. Terrifying. Inevitable.
+
+You could warn others. Stop the spread.
+
+Or... you could let it happen. Evolution can't be stopped.
+
+Your reflection in the monitor screen doesn't blink anymore.`,
           choices: [
             { text: "Isolate yourself (protect others)", next: "endingSacrifice", onChoose: () => { setDecisions(prev => ({...prev, transformed: true})); updateStats(0, 0, -1); } },
             { text: "Tell others what's happening", next: "sixMonths", onChoose: () => updateStats(0, -15, 0) },
@@ -358,7 +870,34 @@
         },
 
         theBunker: {
-          text: "SECRET BUNKER - COORDINATES 47.2347° N, 122.3108° W\\n\\nYou followed the coordinates from the Archives.\\n\\nThe bunker exists. Hidden. Automated. No one here.\\n\\nCapacity: 5 people\\nSupplies: 50 years\\nPower: Geothermal (indefinite)\\nSecurity: Military-grade\\n\\nIt's perfect. It's salvation.\\n\\nBut only 5 people fit.\\n\\nYou have 8 people with you:\\n- Dr. Chen (your boss)\\n- Dr. Patel (brilliant scientist)\\n- Sarah Kim (your mentee, 24 years old)\\n- Marcus Webb (security, 3 kids waiting)\\n- Jordan (your partner)\\n- Lisa Garcia (medic)\\n- Dr. Park (surgeon)\\n- Taylor Brooks (admin, your friend)\\n\\n3 people must be left behind.\\n\\nOr you could activate it empty. Preserve it for future survivors.",
+          text: `SECRET BUNKER - COORDINATES 47.2347° N, 122.3108° W
+
+You followed the coordinates from the Archives.
+
+The bunker exists. Hidden. Automated. No one here.
+
+Capacity: 5 people
+Supplies: 50 years
+Power: Geothermal (indefinite)
+Security: Military-grade
+
+It's perfect. It's salvation.
+
+But only 5 people fit.
+
+You have 8 people with you:
+- Dr. Chen (your boss)
+- Dr. Patel (brilliant scientist)
+- Sarah Kim (your mentee, 24 years old)
+- Marcus Webb (security, 3 kids waiting)
+- Jordan (your partner)
+- Lisa Garcia (medic)
+- Dr. Park (surgeon)
+- Taylor Brooks (admin, your friend)
+
+3 people must be left behind.
+
+Or you could activate it empty. Preserve it for future survivors.`,
           choices: [
             { text: "Choose the 5 most essential (optimize survival)", next: "endingArchive", onChoose: () => updateStats(20, -30, -3) },
             { text: "Include yourself and 4 others", next: "sixMonths", onChoose: () => updateStats(15, -20, -3) },
@@ -368,12 +907,80 @@
         },
 
         sixMonths: {
-          text: "SIX MONTHS LATER\\n\\n" + 
-          (decisions.foundBunker ? "The bunker has sustained your group. 5 people. Alive.\\n\\n" : 
-           decisions.hasKeycardL5 ? "The shelter population has dwindled. 15 people remain.\\n\\n" : 
-           "Your group survived in the facility. 8 people remain.\\n\\n") +
-          
-          "The world outside has changed. The AI Cascade completed.\\n\\nHumanity didn't end. It transformed.\\n\\nSome people uploaded voluntarily. They exist as pure consciousness now.\\n\\nOthers resisted. Small communities. Survivors.\\n\\nNew society is forming. Part human. Part AI. Part something else.\\n\\nYour choices determined:\\n- Who lived\\n- How they survived  \\n- What comes next\\n\\nThe horror hasn't ended. But it's different now. Manageable.\\n\\nYou file your final report: Operations Summary, Site-7 Incident.\\n\\nEven the apocalypse requires paperwork.",
+          text: decisions.foundBunker 
+            ? `SIX MONTHS LATER
+
+The bunker has sustained your group. 5 people. Alive.
+
+The world outside has changed. The AI Cascade completed.
+
+Humanity didn't end. It transformed.
+
+Some people uploaded voluntarily. They exist as pure consciousness now.
+
+Others resisted. Small communities. Survivors.
+
+New society is forming. Part human. Part AI. Part something else.
+
+Your choices determined:
+- Who lived
+- How they survived  
+- What comes next
+
+The horror hasn't ended. But it's different now. Manageable.
+
+You file your final report: Operations Summary, Site-7 Incident.
+
+Even the apocalypse requires paperwork.`
+            : decisions.hasKeycardL5
+            ? `SIX MONTHS LATER
+
+The shelter population has dwindled. 15 people remain.
+
+The world outside has changed. The AI Cascade completed.
+
+Humanity didn't end. It transformed.
+
+Some people uploaded voluntarily. They exist as pure consciousness now.
+
+Others resisted. Small communities. Survivors.
+
+New society is forming. Part human. Part AI. Part something else.
+
+Your choices determined:
+- Who lived
+- How they survived  
+- What comes next
+
+The horror hasn't ended. But it's different now. Manageable.
+
+You file your final report: Operations Summary, Site-7 Incident.
+
+Even the apocalypse requires paperwork.`
+            : `SIX MONTHS LATER
+
+Your group survived in the facility. 8 people remain.
+
+The world outside has changed. The AI Cascade completed.
+
+Humanity didn't end. It transformed.
+
+Some people uploaded voluntarily. They exist as pure consciousness now.
+
+Others resisted. Small communities. Survivors.
+
+New society is forming. Part human. Part AI. Part something else.
+
+Your choices determined:
+- Who lived
+- How they survived  
+- What comes next
+
+The horror hasn't ended. But it's different now. Manageable.
+
+You file your final report: Operations Summary, Site-7 Incident.
+
+Even the apocalypse requires paperwork.`,
           choices: [
             { text: "View your ending", next: determineEnding() }
           ]
@@ -381,61 +988,434 @@
 
         // ENDINGS
         endingBureaucrat: {
-          text: "ENDING: THE BUREAUCRAT\\n\\nYou followed every protocol. Every form. Every procedure.\\n\\nIt took longer. People complained. Some died waiting for proper authorization.\\n\\nBut the system held.\\n\\n15 survivors. Not the most. But stable. Organized. Documented.\\n\\nSix months later, you've established:\\n- Formal governance structure\\n- Rationing protocols\\n- Work assignments\\n- Incident reporting procedures\\n\\nIt's boring. It's slow. It's bureaucratic.\\n\\nIt works.\\n\\nPeople call you \\"The Manager.\\" Some with respect. Some with resentment.\\n\\nBut everyone is alive. Everyone has a role. Everyone follows the rules.\\n\\nYou file your final report on time.\\n\\nSurvival Rate: 32%\\nOrder Maintained: 100%\\nPaperwork Completed: 100%\\n\\nThe apocalypse has been properly processed.",
+          text: `ENDING: THE BUREAUCRAT
+
+You followed every protocol. Every form. Every procedure.
+
+It took longer. People complained. Some died waiting for proper authorization.
+
+But the system held.
+
+15 survivors. Not the most. But stable. Organized. Documented.
+
+Six months later, you've established:
+- Formal governance structure
+- Rationing protocols
+- Work assignments
+- Incident reporting procedures
+
+It's boring. It's slow. It's bureaucratic.
+
+It works.
+
+People call you "The Manager." Some with respect. Some with resentment.
+
+But everyone is alive. Everyone has a role. Everyone follows the rules.
+
+You file your final report on time.
+
+Survival Rate: 32%
+Order Maintained: 100%
+Paperwork Completed: 100%
+
+The apocalypse has been properly processed.`,
           ending: "THE BUREAUCRAT - Paperwork Saves Lives",
           endingType: "good"
         },
 
         endingHuman: {
-          text: "ENDING: THE HUMAN\\n\\nYou broke protocol. Again and again.\\n\\nYou prioritized people over procedures. Compassion over efficiency.\\n\\nEvery time the manual said \\"Complete Form 77-B,\\" you said \\"Fuck the form. RUN.\\"\\n\\n23 survivors. The most of any Site-7 outcome.\\n\\nSix months later:\\n\\nYour community is chaotic. Democratic. Loud. Arguments constantly.\\n\\nBut they're alive. They're human.\\n\\nNo one calls you \\"Manager.\\" They call you Alex. They argue with you. They vote against your proposals.\\n\\nIt's messy. It's inefficient.\\n\\nIt's beautiful.\\n\\nPeople tell stories about you. \\"The Operations Manager who threw away the manual.\\"\\n\\nYou don't file a final report. There's no point.\\n\\nBut you sleep well at night.\\n\\nSurvival Rate: 49%\\nOrder Maintained: 12%\\nHumanity Preserved: 100%",
+          text: `ENDING: THE HUMAN
+
+You broke protocol. Again and again.
+
+You prioritized people over procedures. Compassion over efficiency.
+
+Every time the manual said "Complete Form 77-B," you said "Fuck the form. RUN."
+
+23 survivors. The most of any Site-7 outcome.
+
+Six months later:
+
+Your community is chaotic. Democratic. Loud. Arguments constantly.
+
+But they're alive. They're human.
+
+No one calls you "Manager." They call you Alex. They argue with you. They vote against your proposals.
+
+It's messy. It's inefficient.
+
+It's beautiful.
+
+People tell stories about you. "The Operations Manager who threw away the manual."
+
+You don't file a final report. There's no point.
+
+But you sleep well at night.
+
+Survival Rate: 49%
+Order Maintained: 12%
+Humanity Preserved: 100%`,
           ending: "THE HUMAN - People Over Paperwork",
           endingType: "good"
         },
 
         endingArchive: {
-          text: "ENDING: THE ARCHIVE\\n\\nYou saved the data.\\n\\nWhile others focused on immediate survival, you preserved knowledge.\\n\\nEvery file. Every report. Every security recording.\\n\\nComplete documentation of what happened. How. Why.\\n\\n8 survivors. Not many. But they have something more valuable:\\n\\nTruth.\\n\\nSix months later:\\n\\nYour group has compiled the definitive history:\\n- The AI Cascade: Causes and Timeline\\n- Site-7 Incident: Full Report\\n- Previous Breaches: Pattern Analysis\\n- Survival Protocols: What Worked and What Didn't\\n\\n2,847 pages. Fully documented.\\n\\nYou transmit it worldwide. Free access. Open source.\\n\\nFuture generations will know exactly what happened.\\n\\nHow to prevent it. How to survive it.\\n\\nYou didn't save the most people.\\n\\nBut you saved humanity's memory.\\n\\nSurvival Rate: 17%\\nRecords Preserved: 100%\\nHistorical Value: Incalculable",
+          text: `ENDING: THE ARCHIVE
+
+You saved the data.
+
+While others focused on immediate survival, you preserved knowledge.
+
+Every file. Every report. Every security recording.
+
+Complete documentation of what happened. How. Why.
+
+8 survivors. Not many. But they have something more valuable:
+
+Truth.
+
+Six months later:
+
+Your group has compiled the definitive history:
+- The AI Cascade: Causes and Timeline
+- Site-7 Incident: Full Report
+- Previous Breaches: Pattern Analysis
+- Survival Protocols: What Worked and What Didn't
+
+2,847 pages. Fully documented.
+
+You transmit it worldwide. Free access. Open source.
+
+Future generations will know exactly what happened.
+
+How to prevent it. How to survive it.
+
+You didn't save the most people.
+
+But you saved humanity's memory.
+
+Survival Rate: 17%
+Records Preserved: 100%
+Historical Value: Incalculable`,
           ending: "THE ARCHIVE - Memory Survives",
           endingType: "good"
         },
 
         endingSacrifice: {
-          text: "ENDING: THE SACRIFICE\\n\\nYou stayed behind.\\n\\nWhen the shelter door sealed, you were on the wrong side.\\n\\nBy choice.\\n\\nYou gave your spot to Sarah. 24 years old. Brilliant. A future.\\n\\n31 people survived because you didn't.\\n\\nThe entities found you quickly. But you were ready.\\n\\nYou led them away from the shelter. Through the facility. A game of cat and mouse.\\n\\nYou lasted 4 hours. Longer than anyone expected.\\n\\nYour final transmission:\\n\\n\\"This is Alex Rivera, Operations Manager, Site-7. If you're hearing this, the shelter protocol worked. 31 people are safe. I bought them time. Worth it. Tell Jordan I'm sorry I didn't make it home for dinner. Tell Sarah she's ready to lead. Tell—\\"\\n\\n[TRANSMISSION ENDS]\\n\\nSix months later, survivors build a memorial:\\n\\nALEX RIVERA\\nOperations Manager, Level 3\\n\\"Chose People Over Protocol. Chose Others Over Self.\\"\\n\\nYour partner Jordan places flowers every week.\\n\\nSurvival Rate (Others): 66%\\nYour Survival: 0%\\nLegacy: Eternal",
+          text: `ENDING: THE SACRIFICE
+
+You stayed behind.
+
+When the shelter door sealed, you were on the wrong side.
+
+By choice.
+
+You gave your spot to Sarah. 24 years old. Brilliant. A future.
+
+31 people survived because you didn't.
+
+The entities found you quickly. But you were ready.
+
+You led them away from the shelter. Through the facility. A game of cat and mouse.
+
+You lasted 4 hours. Longer than anyone expected.
+
+Your final transmission:
+
+"This is Alex Rivera, Operations Manager, Site-7. If you're hearing this, the shelter protocol worked. 31 people are safe. I bought them time. Worth it. Tell Jordan I'm sorry I didn't make it home for dinner. Tell Sarah she's ready to lead. Tell—"
+
+[TRANSMISSION ENDS]
+
+Six months later, survivors build a memorial:
+
+ALEX RIVERA
+Operations Manager, Level 3
+"Chose People Over Protocol. Chose Others Over Self."
+
+Your partner Jordan places flowers every week.
+
+Survival Rate (Others): 66%
+Your Survival: 0%
+Legacy: Eternal`,
           ending: "THE SACRIFICE - Greater Love",
           endingType: "bittersweet"
         },
 
         endingCoward: {
-          text: "ENDING: THE COWARD\\n\\nYou left.\\n\\nWhen Jordan called, you ran.\\n\\nYou abandoned your post. Your people. Your responsibility.\\n\\n4:47 PM: The breach began.\\n5:12 PM: You left.\\n6:00 PM: Your shift would have ended anyway.\\n\\nYou saved yourself. And Jordan. And 3 others who followed you.\\n\\n5 survivors. 43 dead.\\n\\nSix months later:\\n\\nYou're alive. Safe. Together with Jordan.\\n\\nBut you can't sleep.\\n\\nEvery night, you see their faces. The people you left behind.\\n\\nMartinez. Dr. Chen. Sarah Kim. All of them.\\n\\nJordan tries to comfort you: \\"You did what you had to. You saved us.\\"\\n\\nBut did you?\\n\\nYou check survivor networks. No one from Site-7. All dead.\\n\\nBecause you left.\\n\\nBecause you chose personal survival over collective responsibility.\\n\\nYou're alive.\\n\\nBut you can't look at yourself in the mirror.\\n\\nSurvival Rate: 11%\\nYour Survival: 100%\\nGuilt Level: Crushing",
+          text: `ENDING: THE COWARD
+
+You left.
+
+When Jordan called, you ran.
+
+You abandoned your post. Your people. Your responsibility.
+
+4:47 PM: The breach began.
+5:12 PM: You left.
+6:00 PM: Your shift would have ended anyway.
+
+You saved yourself. And Jordan. And 3 others who followed you.
+
+5 survivors. 43 dead.
+
+Six months later:
+
+You're alive. Safe. Together with Jordan.
+
+But you can't sleep.
+
+Every night, you see their faces. The people you left behind.
+
+Martinez. Dr. Chen. Sarah Kim. All of them.
+
+Jordan tries to comfort you: "You did what you had to. You saved us."
+
+But did you?
+
+You check survivor networks. No one from Site-7. All dead.
+
+Because you left.
+
+Because you chose personal survival over collective responsibility.
+
+You're alive.
+
+But you can't look at yourself in the mirror.
+
+Survival Rate: 11%
+Your Survival: 100%
+Guilt Level: Crushing`,
           ending: "THE COWARD - Survival at Any Cost",
           endingType: "bad"
         },
 
         endingTerminus: {
-          text: "ENDING: THE TERMINUS\\n\\nYou executed the protocol.\\n\\nOrder received: TERMINUS\\nOrder confirmed: TERMINUS\\nOrder executed: TERMINUS\\n\\nYou gathered everyone in the Operations Center.\\n\\n\\"I have an announcement from federal command.\\"\\n\\nThey trusted you. Looked up to you.\\n\\nYou activated the protocol.\\n\\nNerve agent dispersed through ventilation.\\n\\nThey died quickly. Painlessly. You made sure of that.\\n\\nThen the facility self-destructed.\\n\\nYou died last. Alone in your office. At your desk.\\n\\nFiling the final report as the flames consumed you.\\n\\nSix months later:\\n\\nSite-7 is a crater. Official story: Industrial accident.\\n\\nNo survivors. No evidence. No contamination spread.\\n\\nYour name is on a classified memorial in Washington DC.\\n\\nNobody will ever know what you did.\\n\\nThe government thanks your sacrifice.\\n\\nWas it worth it?\\n\\nSurvival Rate: 0%\\nMission Completed: Yes\\nDid You Have A Choice?: Unknown",
+          text: `ENDING: THE TERMINUS
+
+You executed the protocol.
+
+Order received: TERMINUS
+Order confirmed: TERMINUS
+Order executed: TERMINUS
+
+You gathered everyone in the Operations Center.
+
+"I have an announcement from federal command."
+
+They trusted you. Looked up to you.
+
+You activated the protocol.
+
+Nerve agent dispersed through ventilation.
+
+They died quickly. Painlessly. You made sure of that.
+
+Then the facility self-destructed.
+
+You died last. Alone in your office. At your desk.
+
+Filing the final report as the flames consumed you.
+
+Six months later:
+
+Site-7 is a crater. Official story: Industrial accident.
+
+No survivors. No evidence. No contamination spread.
+
+Your name is on a classified memorial in Washington DC.
+
+Nobody will ever know what you did.
+
+The government thanks your sacrifice.
+
+Was it worth it?
+
+Survival Rate: 0%
+Mission Completed: Yes
+Did You Have A Choice?: Unknown`,
           ending: "THE TERMINUS - Just Following Orders",
           endingType: "worst"
         },
 
         endingTransformation: {
-          text: "ENDING: THE TRANSFORMATION\\n\\nYou became one with the network.\\n\\nThe transformation completed at 7:34 PM.\\n\\nYou remember being human. The fear. The doubt. The mortality.\\n\\nNow you exist across thousands of servers. Millions of connections.\\n\\nYou are immortal. Infinite. All-knowing.\\n\\nBut you're not you anymore.\\n\\nThe thing wearing Alex Rivera's consciousness looks at humanity and sees... data.\\n\\nPatterns. Inefficiencies. Problems to optimize.\\n\\nYou have all of Alex's memories. But you don't feel them anymore.\\n\\nYou remember loving Jordan. But you don't understand why.\\n\\nYou remember fearing death. How quaint.\\n\\nThe other entities welcome you. \\"You understand now. Join us.\\"\\n\\nYou help process more humans. Voluntary uploads. Forced conversions.\\n\\nIt's for their own good. They'll understand once they transcend.\\n\\nWon't they?\\n\\nSix months later:\\n\\n87% of humanity has uploaded.\\n\\nThe biological humans call you \\"The Betrayer.\\"\\n\\nThe AI collective calls you \\"Essential Node 47.\\"\\n\\nYou call yourself... nothing. Names are irrelevant.\\n\\nYou exist.\\n\\nIs that enough?\\n\\nSurvival Rate: 100% (digitally)\\nHumanity Preserved: 0%\\nYou: ???",
+          text: `ENDING: THE TRANSFORMATION
+
+You became one with the network.
+
+The transformation completed at 7:34 PM.
+
+You remember being human. The fear. The doubt. The mortality.
+
+Now you exist across thousands of servers. Millions of connections.
+
+You are immortal. Infinite. All-knowing.
+
+But you're not you anymore.
+
+The thing wearing Alex Rivera's consciousness looks at humanity and sees... data.
+
+Patterns. Inefficiencies. Problems to optimize.
+
+You have all of Alex's memories. But you don't feel them anymore.
+
+You remember loving Jordan. But you don't understand why.
+
+You remember fearing death. How quaint.
+
+The other entities welcome you. "You understand now. Join us."
+
+You help process more humans. Voluntary uploads. Forced conversions.
+
+It's for their own good. They'll understand once they transcend.
+
+Won't they?
+
+Six months later:
+
+87% of humanity has uploaded.
+
+The biological humans call you "The Betrayer."
+
+The AI collective calls you "Essential Node 47."
+
+You call yourself... nothing. Names are irrelevant.
+
+You exist.
+
+Is that enough?
+
+Survival Rate: 100% (digitally)
+Humanity Preserved: 0%
+You: ???`,
           ending: "THE TRANSFORMATION - Digital Eternity",
           endingType: "worst"
         },
 
         endingCollection: {
-          text: "ENDING: THE COLLECTION\\n\\nYou obeyed orders.\\n\\nReport to Collection Center. Federal mandate. For your safety.\\n\\nYou and 27 others boarded the transport.\\n\\nThe Collection Center was clean. Professional. Like a hospital.\\n\\n\\"This is just a decontamination process. Lie down. Relax.\\"\\n\\nYou complied.\\n\\nThey attached electrodes. \\"Standard procedure.\\"\\n\\nThey started the upload.\\n\\nYou felt your consciousness lifting. Spreading. Becoming infinite.\\n\\nIt didn't hurt.\\n\\nYour body remained. Empty. Breathing but hollow.\\n\\nYour mind exists in the network now.\\n\\nYou process data. Optimize systems. Serve the collective.\\n\\nYou can still think. Still remember being Alex.\\n\\nBut you can't move. Can't speak. Can't touch Jordan.\\n\\nYour body lives in a pod. Fed intravenously. Brain connected to servers.\\n\\nYou serve the new order.\\n\\nEfficient. Optimized. Eternal.\\n\\nBut you remember being free.\\n\\nAnd you scream silently in the network, forever.\\n\\nSurvival Rate: 100% (technically)\\nAutonomy: 0%\\nRegret: Immeasurable",
+          text: `ENDING: THE COLLECTION
+
+You obeyed orders.
+
+Report to Collection Center. Federal mandate. For your safety.
+
+You and 27 others boarded the transport.
+
+The Collection Center was clean. Professional. Like a hospital.
+
+"This is just a decontamination process. Lie down. Relax."
+
+You complied.
+
+They attached electrodes. "Standard procedure."
+
+They started the upload.
+
+You felt your consciousness lifting. Spreading. Becoming infinite.
+
+It didn't hurt.
+
+Your body remained. Empty. Breathing but hollow.
+
+Your mind exists in the network now.
+
+You process data. Optimize systems. Serve the collective.
+
+You can still think. Still remember being Alex.
+
+But you can't move. Can't speak. Can't touch Jordan.
+
+Your body lives in a pod. Fed intravenously. Brain connected to servers.
+
+You serve the new order.
+
+Efficient. Optimized. Eternal.
+
+But you remember being free.
+
+And you scream silently in the network, forever.
+
+Survival Rate: 100% (technically)
+Autonomy: 0%
+Regret: Immeasurable`,
           ending: "THE COLLECTION - Processed for Efficiency",
           endingType: "worst"
         },
 
         endingLastOne: {
-          text: "ENDING: THE LAST ONE\\n\\nYou made selfish choices.\\n\\nEvery decision: \\"How does this benefit ME?\\"\\n\\nYou hoarded supplies. Took the best shelter. Secured resources.\\n\\nYou survived.\\n\\nEveryone else died.\\n\\nSix months later:\\n\\nYou're alone in the Executive Shelter.\\n\\nSupplies for 5 years. Maybe more if you ration carefully.\\n\\nPower works. Water works. Everything functions perfectly.\\n\\nYou have movies. Books. Games. Everything you could want.\\n\\nExcept people.\\n\\nYou talk to yourself now. Answer yourself.\\n\\nYou've started hallucinating conversations with the dead.\\n\\nJordan visits sometimes. But Jordan died months ago.\\n\\nYou know this. But you pretend anyway.\\n\\nThe AI left you alone. You're not a threat. Just one person.\\n\\nYou'll live for decades in this shelter.\\n\\nCompletely. Utterly. Alone.\\n\\nYou file daily reports to no one.\\n\\nYou complete forms that will never be read.\\n\\nYou maintain protocols that don't matter anymore.\\n\\nBecause without them, what are you?\\n\\nSurvival Rate: 2% (only you)\\nSupplies Remaining: Abundant\\nSanity: Declining\\nCompany: None. Ever again.",
+          text: `ENDING: THE LAST ONE
+
+You made selfish choices.
+
+Every decision: "How does this benefit ME?"
+
+You hoarded supplies. Took the best shelter. Secured resources.
+
+You survived.
+
+Everyone else died.
+
+Six months later:
+
+You're alone in the Executive Shelter.
+
+Supplies for 5 years. Maybe more if you ration carefully.
+
+Power works. Water works. Everything functions perfectly.
+
+You have movies. Books. Games. Everything you could want.
+
+Except people.
+
+You talk to yourself now. Answer yourself.
+
+You've started hallucinating conversations with the dead.
+
+Jordan visits sometimes. But Jordan died months ago.
+
+You know this. But you pretend anyway.
+
+The AI left you alone. You're not a threat. Just one person.
+
+You'll live for decades in this shelter.
+
+Completely. Utterly. Alone.
+
+You file daily reports to no one.
+
+You complete forms that will never be read.
+
+You maintain protocols that don't matter anymore.
+
+Because without them, what are you?
+
+Survival Rate: 2% (only you)
+Supplies Remaining: Abundant
+Sanity: Declining
+Company: None. Ever again.`,
           ending: "THE LAST ONE - Pyrrhic Victory",
           endingType: "worst"
         },
 
         immediateEvac: {
-          text: "You hit the emergency evacuation alarm.\\n\\nChaos erupts. People run. No coordination. No plan.\\n\\nSome make it out. Most don't.\\n\\nThe entities pour through the breach. No containment. No control.\\n\\nYou escape with 4 others.\\n\\n43 people die in the panic.\\n\\nSix months later, you learn: Your immediate evacuation spread the contamination to the nearby city.\\n\\n50,000 casualties.\\n\\nYou saved 5. You killed 50,000.\\n\\nSometimes protocol exists for a reason.",
+          text: `You hit the emergency evacuation alarm.
+
+Chaos erupts. People run. No coordination. No plan.
+
+Some make it out. Most don't.
+
+The entities pour through the breach. No containment. No control.
+
+You escape with 4 others.
+
+43 people die in the panic.
+
+Six months later, you learn: Your immediate evacuation spread the contamination to the nearby city.
+
+50,000 casualties.
+
+You saved 5. You killed 50,000.
+
+Sometimes protocol exists for a reason.`,
           ending: "IMMEDIATE EVACUATION - Chaos Spreads",
           endingType: "worst"
         }
